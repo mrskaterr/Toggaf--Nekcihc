@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{0a831a48-2b8e-706c-b531-0ab89c867acd}</ProjectGuid>
+    <ProjectGuid>{bfea573f-4cab-03cc-13b9-bec4c5451503}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</AssemblyName>
@@ -236,13 +236,13 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="mscorlib">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -590,33 +590,33 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/Facades/System.Xml.XPath.XDocument.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.TestRunner">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
-        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{c933be77-b2f7-c6bd-bf01-0ed59754175a}</Project>
+      <Project>{a9996c88-2235-c259-be8c-173e3856590a}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{26c39af4-6ce9-4619-e993-704154cbd24c}</Project>
+      <Project>{cce226a8-0f53-018f-d8ee-ca8f274c2ef4}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{28b044b9-734b-029c-3728-d658f974a2f9}</Project>
+      <Project>{45422684-c64d-0f09-3716-c77b320bf2d4}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{c8831d58-8a36-b85d-4312-2e9ac8505776}</Project>
+      <Project>{9dfc617a-0018-7eb0-c835-535d72012f65}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
