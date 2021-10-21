@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 2048
     height: 1068.8
   m_ShowMode: 4
-  m_Title: Project
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 2048
     height: 1019
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 678, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 86
+  controlID: 59
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 112
+  controlID: 68
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -172,7 +172,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 113
+  controlID: 69
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -274,8 +274,8 @@ MonoBehaviour:
     y: 0
     width: 402
     height: 1019
-  m_MinSize: {x: 276, y: 121}
-  m_MaxSize: {x: 4001, y: 4021}
+  m_MinSize: {x: 275, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 13}
   m_Panes:
   - {fileID: 13}
@@ -402,7 +402,7 @@ MonoBehaviour:
     m_ControlHash: 1412526313
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 643.2001
+  m_LastVerticalScrollValue: 0
   m_AssetGUID: 
   m_InstanceID: 0
   m_LockTracker:
@@ -438,18 +438,18 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 764fffff964fffff9250ffff9850ffff6053ffff8053ffff7c54ffff8254ffff6a67ffff9267ffff2c68ffff3a69ffff5a69ffff566affff5c6affffba6effffb06fffffd06fffffc270ffffc870ffffbc7affffae7bffffce7bffffba7cffffc07cffffae7effff9c7fffff1e80ffff3e80ffff2481ffff6281ffff1e83ffff9684ffffa685ffffc685ffffc086ffffc686ffff388affff488bffff688bffff548cffff5e8cffffbe8cffff0c8fffff5c8fffff7c8fffff6a90ffff7490ffffd090ffffa492ffffcc93ffffc894ffffe894ffffe495ffffea95ffffca97ffffc298ffffe298ffffde99ffffe499ffff309cffffcc9dffffca9effffea9effff049fffff0a9fffff569fffff769fffff64a0ffff6ea0ffffcaa0fffff6a1ffffc2a2ffffd0a3fffff0a3ffffeca4fffff2a4ffff32a7ffff2ea8ffff4ea8ffff4aa9ffff50a9ffffc2aaffffc6abffffe6abffffe2acffffe8acffff08afffff04b0ffff24b0ffff0eb1ffff14b1fffff0b2ffff90b5ffff32b7ffffcab9ffffc4baffffe4baffffe0bbffffe6bbffff54beffff64bfffff84bfffff9ebfffffa4bffffff6bfffff16c0ffff00c1ffff06c1ffff4cc4ffff76c5ffff7ec7ffff28ceffff28cfffff48cfffff62cfffff68cfffffbacfffffdacfffffccd0ffffd2d0ffff8ad5ffff86d6ffffa6d6ffffc0d6ffffc6d6ffff28d7ffff48d7ffff36d8ffff40d8ffff9cd8ffff82ddffffa4e2ffffb6e3ffff1ee5ffff3ee5ffff26e6ffff64e6ffff88eaffff42ebffff62ebffff76ecffff96ecffffeaf4ffff0af5ffff0af6ffff10f6ffff5afbffff189200004c920000
+      m_ExpandedIDs: 60f9ffff50faffff5afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: Camera Holder
-        m_OriginalName: Camera Holder
+        m_Name: Cube
+        m_OriginalName: Cube
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 15158
+        m_UserData: -1996
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
         m_OriginalEventType: 0
@@ -500,7 +500,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: 0, y: -1, z: 0}
     speed: 2
-    m_Value: {x: 1307.8762, y: 417.76144, z: -86.07467}
+    m_Value: {x: 0, y: -1, z: 0}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -539,7 +539,7 @@ MonoBehaviour:
       m_Fade:
         m_Target: 0
         speed: 2
-        m_Value: 1
+        m_Value: 0
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -549,11 +549,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.16839565, y: 0.2928612, z: -0.052476667, w: -0.93975085}
     speed: 2
-    m_Value: {x: 0, y: 0, z: 0, w: 1}
+    m_Value: {x: -0.16839479, y: 0.2928597, z: -0.0524764, w: -0.939746}
   m_Size:
-    m_Target: 7.1414285
+    m_Target: 9.931033
     speed: 2
-    m_Value: 813.8457
+    m_Value: 9.931033
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -705,20 +705,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Resources/PhotonPrefabs
     m_Globs: []
   m_ViewMode: 1
   m_StartGridSize: 68
   m_LastFolders:
-  - Assets
+  - Assets/Resources/PhotonPrefabs
   m_LastFoldersGridSize: 68
   m_LastProjectPath: G:\Programy\Unity\projekty\TN\Toggaf--Nekcihc
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 863a0000
-    m_LastClickedID: 14982
+    m_SelectedIDs: e83c0000
+    m_LastClickedID: 15592
     m_ExpandedIDs: 00000000863a0000943a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -774,7 +774,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000843401008a4001006c350100f635010058410100321711007a3a01007c3a0100624401004e370100184201005e390100b8380100405d0200445a17006c580100c4a61b0046141000908a0400725f010004550100946801000e7820002c3c090084130500000000009e880100d42509008675020090fa1100
     m_RenameOverlay:
       m_UserAcceptedRename: 0
