@@ -35,7 +35,8 @@ public class PlayerController : MonoBehaviour
         }
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("RoleID"))
         {
-            roleIndex = (int)PhotonNetwork.LocalPlayer.CustomProperties["RoleID"];
+            //roleIndex = (int)PhotonNetwork.LocalPlayer.CustomProperties["RoleID"];
+            roleIndex = (int)PV.Owner.CustomProperties["RoleID"];
         }
     }
 

@@ -2,33 +2,30 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using Photon.Pun;
 
 public class ReadRoleTest : MonoBehaviour
 {
-    [SerializeField] Color astro;
-    [SerializeField] Color red;
-    [SerializeField] Color blue;
-    [SerializeField] Color none;
-
-    [SerializeField] Image image;
     [SerializeField] PlayerController player;
 
     private void Start()
     {
+        if (!player.GetComponent<PhotonView>().IsMine) { Destroy(gameObject); }
+        Text text = GetComponent<Text>();
         int role = player.roleIndex;
         switch (role)
         {
             default:
-                image.color = none;
+                text.text = "none";
                 break;
             case 1:
-                image.color = astro;
+                text.text = "astro";
                 break;
             case 2:
-                image.color = red;
+                text.text = "red";
                 break;
             case 3:
-                image.color = blue;
+                text.text = "blue";
                 break;
         }
     }
