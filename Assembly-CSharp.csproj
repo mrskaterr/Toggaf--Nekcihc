@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
+    <ProjectGuid>{ffdd49f4-fbba-162f-fe6f-738e70d21d44}</ProjectGuid>
+=======
     <ProjectGuid>{F449DDFF-BAFB-2F16-FE6F-738E70D21D44}</ProjectGuid>
+>>>>>>> Dave
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -71,6 +75,28 @@
     <Compile Include="Assets\SetTeam.cs" />
   </ItemGroup>
   <ItemGroup>
+<<<<<<< HEAD
+     <Compile Include="Assets\Scripts\RoomListItem.cs" />
+     <Compile Include="Assets\SetRoleButton.cs" />
+     <Compile Include="Assets\RandomColor.cs" />
+     <Compile Include="Assets\PlayerManager.cs" />
+     <Compile Include="Assets\PlayerGroundCheck.cs" />
+     <Compile Include="Assets\Scripts\PlayerListItem.cs" />
+     <Compile Include="Assets\Scripts\MenuManager.cs" />
+     <Compile Include="Assets\PlayerController.cs" />
+     <Compile Include="Assets\ReadRoleTest.cs" />
+     <Compile Include="Assets\RoomManager.cs" />
+     <Compile Include="Assets\Scripts\Menu.cs" />
+     <Compile Include="Assets\Testoweanie.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+     <Compile Include="Assets\Scripts\Launcher.cs" />
+     <Compile Include="Assets\BlockWhenEmpty.cs" />
+     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+     <Compile Include="Assets\MouseCam.cs" />
+     <Compile Include="Assets\PlayerMov.cs" />
+     <Compile Include="Assets\Morfing.cs" />
+=======
+>>>>>>> Dave
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
@@ -292,6 +318,15 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+=======
       <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -299,6 +334,7 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
+>>>>>>> Dave
     </Reference>
     <Reference Include="netstandard">
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -646,6 +682,33 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
+<<<<<<< HEAD
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VSCode.Editor">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro.Editor">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Timeline">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.Rider.Editor">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.VisualStudio.Editor">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEditor.UI">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+=======
       <HintPath>Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
@@ -671,10 +734,38 @@
     </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+>>>>>>> Dave
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
+<<<<<<< HEAD
+      <Project>{bfea573f-4cab-03cc-13b9-bec4c5451503}</Project>
+      <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
+      <Project>{45422684-c64d-0f09-3716-c77b320bf2d4}</Project>
+      <Name>PhotonUnityNetworking.Utilities</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonRealtime.csproj">
+      <Project>{a9996c88-2235-c259-be8c-173e3856590a}</Project>
+      <Name>PhotonRealtime</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.csproj">
+      <Project>{cce226a8-0f53-018f-d8ee-ca8f274c2ef4}</Project>
+      <Name>PhotonUnityNetworking</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonChat.csproj">
+      <Project>{b2cbc0db-f8c2-460d-5c78-30e6659a2257}</Project>
+      <Name>PhotonChat</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
+      <Project>{9be6ea9e-d64a-262d-dd3e-da8adf7a5059}</Project>
+      <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
+    </ProjectReference>
+    <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+      <Project>{9dfc617a-0018-7eb0-c835-535d72012f65}</Project>
+=======
       <Project>{3F57EABF-AB4C-CC03-13B9-BEC4C5451503}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
@@ -700,6 +791,7 @@
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
       <Project>{7A61FC9D-1800-B07E-C835-535D72012F65}</Project>
+>>>>>>> Dave
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>

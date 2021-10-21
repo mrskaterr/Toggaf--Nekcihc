@@ -1,1 +1,5 @@
+<<<<<<< HEAD
+﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":0.9760274887084961,"y":0.21000000834465028,"z":-0.0299999862909317},"rotation":{"x":0.24885612726211549,"y":-0.7498034834861755,"z":0.4065071940422058,"w":0.4589660167694092},"size":2.7879104614257814,"orthographic":true}
+=======
 ﻿{"cameraMode":{"drawMode":0,"name":"Shaded","section":"Shading Mode"},"sceneLighting":true,"audioPlay":false,"sceneViewState":{"showFog":true,"showMaterialUpdate":false,"showSkybox":true,"showFlares":true,"showImageEffects":true,"showParticleSystems":true,"showVisualEffectGraphs":true,"m_FxEnabled":true},"in2DMode":false,"pivot":{"x":0.0,"y":-1.0,"z":0.0},"rotation":{"x":-0.16839565336704255,"y":0.2928611934185028,"z":-0.052476666867733,"w":-0.9397508502006531},"size":9.93103313446045,"orthographic":true}
+>>>>>>> Dave

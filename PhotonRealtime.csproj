@@ -9,7 +9,11 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
+<<<<<<< HEAD
+    <ProjectGuid>{a9996c88-2235-c259-be8c-173e3856590a}</ProjectGuid>
+=======
     <ProjectGuid>{886C99A9-3522-59C2-BE8C-173E3856590A}</ProjectGuid>
+>>>>>>> Dave
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>PhotonRealtime</AssemblyName>
@@ -275,6 +279,15 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\PlaybackEngines\MetroSupport\UnityEditor.UWP.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
+=======
       <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
@@ -282,6 +295,7 @@
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
+>>>>>>> Dave
     </Reference>
     <Reference Include="netstandard">
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\NetStandard\ref\2.0.0\netstandard.dll</HintPath>
@@ -629,10 +643,17 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
+<<<<<<< HEAD
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+        <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf-Nekcihc2/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+=======
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+>>>>>>> Dave
     </Reference>
   </ItemGroup>
   <ItemGroup>
