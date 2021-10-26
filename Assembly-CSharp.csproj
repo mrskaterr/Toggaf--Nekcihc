@@ -73,6 +73,9 @@
     <Compile Include="Assets\Scripts\Launcher.cs" />
     <Compile Include="Assets\BlockWhenEmpty.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\ItemInfo.cs" />
+    <Compile Include="Assets\GunInfo.cs" />
+    <Compile Include="Assets\Item.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
