@@ -246,6 +246,9 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
+<<<<<<< HEAD
+      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
+=======
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
@@ -622,11 +625,16 @@
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
+>>>>>>> main
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonRealtime.csproj">
+<<<<<<< HEAD
+      <Project>{277E379D-91B6-6D17-3E91-841DE2454696}</Project>
+=======
       <Project>{886C99A9-3522-59C2-BE8C-173E3856590A}</Project>
+>>>>>>> main
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
@@ -638,7 +646,11 @@
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
+<<<<<<< HEAD
+      <Project>{2EE21EC3-F035-105F-CDDB-CA4270005731}</Project>
+=======
       <Project>{7A61FC9D-1800-B07E-C835-535D72012F65}</Project>
+>>>>>>> main
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
