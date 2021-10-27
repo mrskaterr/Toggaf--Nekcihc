@@ -22,7 +22,7 @@ public class PlayerListItem : MonoBehaviourPunCallbacks
 
     public void SetRoleDisplay()
     {
-        if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("RoleID"))
+        if (player.CustomProperties.ContainsKey("RoleID"))
         {
             int rIndex = (int)player.CustomProperties["RoleID"];
             if (rIndex < 1 && rIndex > 3)
