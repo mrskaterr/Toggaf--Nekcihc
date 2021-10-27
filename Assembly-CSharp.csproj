@@ -129,6 +129,30 @@
  <Reference Include="UnityEditor.UI">
  <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
+ <Reference Include="Unity.Polybrush">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.Polybrush.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Polybrush.Editor">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.Polybrush.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProBuilder.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.Editor">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProBuilder.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AssetIdRemapUtility">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProBuilder.AssetIdRemapUtility.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProBuilder.AddOns.Editor">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProBuilder.AddOns.Editor.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProGrids.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.ProGrids.Editor">
+ <HintPath>D:/Users/kubus/Desktop/Projekt zespołowy/Toggaf--Nekcihc/Library/ScriptAssemblies/Unity.ProGrids.Editor.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.AIModule">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
  </Reference>
