@@ -57,6 +57,8 @@
     <Compile Include="Assets\Scripts\RoomListItem.cs" />
     <Compile Include="Assets\SetRoleButton.cs" />
     <Compile Include="Assets\PlayerMov.cs" />
+    <Compile Include="Assets\TeamBlue.cs" />
+    <Compile Include="Assets\TeamRed.cs" />
     <Compile Include="Assets\PlayerManager.cs" />
     <Compile Include="Assets\PlayerGroundCheck.cs" />
     <Compile Include="Assets\Scripts\PlayerListItem.cs" />
@@ -68,21 +70,20 @@
     <Compile Include="Assets\PlayerHolder.cs" />
     <Compile Include="Assets\RoomManager.cs" />
     <Compile Include="Assets\Morfing.cs" />
+    <Compile Include="Assets\ICatchable.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\SetTeam.cs" />
+    <Compile Include="Assets\Gun.cs" />
     <Compile Include="Assets\Testoweanie.cs" />
     <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
+    <Compile Include="Assets\TeamAstro.cs" />
     <Compile Include="Assets\BlockWhenEmpty.cs" />
     <Compile Include="Assets\Item.cs" />
-    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
-    <Compile Include="Assets\Gun.cs" />
-    <Compile Include="Assets\BlobCatcher.cs" />
-    <Compile Include="Assets\ICatchable.cs" />
-    <Compile Include="Assets\TeamAstro.cs" />
-    <Compile Include="Assets\TeamRed.cs" />
-    <Compile Include="Assets\TeamBlue.cs" />
     <Compile Include="Assets\Spawns.cs" />
+    <Compile Include="Assets\BlobCatcher.cs" />
+    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\EndScreen.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

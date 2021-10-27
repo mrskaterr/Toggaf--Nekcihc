@@ -1,18 +1,31 @@
-﻿using System.Collections;
+﻿using Photon.Pun;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class TeamRed : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    PhotonView PV;
+    public GameObject[] guns;
 
-    // Update is called once per frame
-    void Update()
+    private void Start()
     {
-        
+        PV = GetComponent<PhotonView>();
+        RedSetUp();
+    }
+    void RedSetUp()
+    {
+        PlayerController player = GetComponent<PlayerController>();
+        if (player.roleIndex == 2)
+        {
+            foreach(GameObject gun in guns)
+            {
+                Destroy(gun);
+            }
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }
