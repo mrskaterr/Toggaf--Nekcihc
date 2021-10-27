@@ -13,5 +13,7 @@ public class SetRoleButton : MonoBehaviour
         _roleID["RoleID"] = index;
         PhotonNetwork.LocalPlayer.CustomProperties = _roleID;
         PhotonNetwork.SetPlayerCustomProperties(_roleID);//this one sh***y line gave me a lot of nerves
+
+        Launcher.instance.RoleDisplay();
     }
 }
