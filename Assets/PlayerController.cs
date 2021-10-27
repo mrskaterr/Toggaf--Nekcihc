@@ -5,9 +5,10 @@ using Photon.Pun;
 using Hashtable = ExitGames.Client.Photon.Hashtable;
 using Photon.Realtime;
 
-public class PlayerController : MonoBehaviourPunCallbacks
+public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 {
     [SerializeField] GameObject cameraHolder;
+    [HideInInspector] public Camera cam;
 
     [SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime;
 
@@ -26,6 +27,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
 
     public int roleIndex = 0;
 
+    bool caught;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
@@ -41,7 +44,9 @@ public class PlayerController : MonoBehaviourPunCallbacks
         }
         else
         {
-            Destroy(GetComponentInChildren<Camera>().gameObject);// wrong camera
+            //Destroy(GetComponentInChildren<Camera>().gameObject);// wrong camera
+            cam = GetComponentInChildren<Camera>();
+            cam.gameObject.SetActive(false);
             Destroy(rb);// janky movement
         }
         if (PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("RoleID"))
@@ -49,6 +54,8 @@ public class PlayerController : MonoBehaviourPunCallbacks
             //roleIndex = (int)PhotonNetwork.LocalPlayer.CustomProperties["RoleID"];
             roleIndex = (int)PV.Owner.CustomProperties["RoleID"];
         }
+        transform.position = Spawns.instance.points[roleIndex - 1].position;
+        transform.eulerAngles = Spawns.instance.points[roleIndex - 1].eulerAngles;
     }
 
     private void Update()
@@ -91,6 +98,11 @@ public class PlayerController : MonoBehaviourPunCallbacks
             {
                 EquipItem(itemIndex - 1);
             }
+        }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            items[itemIndex].Use();
         }
     }
 
@@ -160,5 +172,43 @@ public class PlayerController : MonoBehaviourPunCallbacks
     public void SetGroundedState(bool _grounded)
     {
         grounded = _grounded;
+    }
+
+    public void Catch(bool state)
+    {
+        PV.RPC("RPC_Catch", RpcTarget.All, state);//RPC params: method name, target players, method params
+    }
+
+    [PunRPC]
+    void RPC_Catch(bool state)
+    {
+        if (!PV.IsMine)
+        {
+            return;
+        }
+        caught = state;
+        //for now ...
+        if (caught)
+        {
+            Spectate();
+        }
+    }
+
+    void Spectate()
+    {
+        PlayerController[] controllers = FindObjectsOfType<PlayerController>();// TODO: zrzucanie PlayerController do playerHoldera w starcie
+        PlayerController controller = null;
+        bool con = true;
+        while (con)
+        {
+            int index = Random.Range(0, PhotonNetwork.PlayerList.Length);
+            controller = controllers[index];
+            if (controller != this && controller.roleIndex != 1)
+            {
+                con = false;
+            }
+        }
+        controller.cam.gameObject.SetActive(true);
+        cam.gameObject.SetActive(false);
     }
 }

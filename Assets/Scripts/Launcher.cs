@@ -78,14 +78,26 @@ public class Launcher : MonoBehaviourPunCallbacks
             Instantiate(playerListItemPrefab, playerListContent).GetComponent<PlayerListItem>().SetUp(players[i]);
         }
 
-        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+        //startGameButton.SetActive(PhotonNetwork.IsMasterClient);
 
         roomPlayersCountText.text = "( " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers + " )";
     }
 
     public override void OnMasterClientSwitched(Player newMasterClient)
     {
-        startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+        //startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+    }
+
+    private void Update()
+    {
+        if(PhotonNetwork.IsMasterClient && CheckTeams())
+        {
+            startGameButton.SetActive(true);
+        }
+        else
+        {
+            startGameButton.SetActive(false);
+        }
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
@@ -141,5 +153,41 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnPlayerLeftRoom(Player otherPlayer)
     {
         roomPlayersCountText.text = "( " + PhotonNetwork.CurrentRoom.PlayerCount + " / " + PhotonNetwork.CurrentRoom.MaxPlayers + " )";
+    }
+
+    public void RoleDisplay()
+    {
+        GetComponent<PhotonView>().RPC("RPC_RoleDisplay", RpcTarget.All);
+    }
+
+    bool CheckTeams()
+    {
+        List<int> roles = new List<int>();
+        for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
+        {
+            if (PhotonNetwork.PlayerList[i].CustomProperties.ContainsKey("RoleID"))
+            {
+                int tmp = (int)PhotonNetwork.PlayerList[i].CustomProperties["RoleID"];
+                if (!roles.Contains(tmp))
+                {
+                    roles.Add(tmp);
+                }
+                else { return false; }
+            }
+            else
+            {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    [PunRPC]
+    void RPC_RoleDisplay()
+    {
+        foreach (PlayerListItem pLI in playerListContent.GetComponentsInChildren<PlayerListItem>())
+        {
+            pLI.SetRoleDisplay();
+        }
     }
 }
