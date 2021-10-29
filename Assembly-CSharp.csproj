@@ -35,6 +35,50 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+<<<<<<< HEAD
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.5</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.1.17f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\GunInfo.cs" />
+    <Compile Include="Assets\Scripts\RoomListItem.cs" />
+    <Compile Include="Assets\SetRoleButton.cs" />
+    <Compile Include="Assets\PlayerMov.cs" />
+    <Compile Include="Assets\TeamBlue.cs" />
+    <Compile Include="Assets\TeamRed.cs" />
+    <Compile Include="Assets\PlayerManager.cs" />
+    <Compile Include="Assets\PlayerGroundCheck.cs" />
+    <Compile Include="Assets\Scripts\PlayerListItem.cs" />
+    <Compile Include="Assets\Scripts\MenuManager.cs" />
+    <Compile Include="Assets\MouseCam.cs" />
+    <Compile Include="Assets\ItemInfo.cs" />
+    <Compile Include="Assets\PlayerController.cs" />
+    <Compile Include="Assets\ReadRoleTest.cs" />
+    <Compile Include="Assets\PlayerHolder.cs" />
+    <Compile Include="Assets\RoomManager.cs" />
+    <Compile Include="Assets\Morfing.cs" />
+    <Compile Include="Assets\ICatchable.cs" />
+    <Compile Include="Assets\Scripts\Menu.cs" />
+    <Compile Include="Assets\SetTeam.cs" />
+    <Compile Include="Assets\Gun.cs" />
+    <Compile Include="Assets\Testoweanie.cs" />
+    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\Scripts\Launcher.cs" />
+    <Compile Include="Assets\TeamAstro.cs" />
+    <Compile Include="Assets\BlockWhenEmpty.cs" />
+    <Compile Include="Assets\Item.cs" />
+    <Compile Include="Assets\Spawns.cs" />
+    <Compile Include="Assets\BlobCatcher.cs" />
+    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
+    <Compile Include="Assets\EndScreen.cs" />
+  </ItemGroup>
+=======
+>>>>>>> Paweł
   <ItemGroup>
      <Compile Include="Assets\GunInfo.cs" />
      <Compile Include="Assets\Scripts\RoomListItem.cs" />

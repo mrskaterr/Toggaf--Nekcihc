@@ -17,12 +17,28 @@ public class PlayerManager : MonoBehaviour
     {
         if (PV.IsMine)
         {
-            CreateController();
+            
+            if (PV.Owner.CustomProperties.ContainsKey("RoleID"))
+            {
+                CreateController((int)PV.Owner.CustomProperties["RoleID"]);
+            }
         }
     }
 
-    void CreateController()
+    void CreateController(int roleIndex)
     {
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController"), Vector3.zero, Quaternion.identity);
+        //PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController"), Vector3.zero, Quaternion.identity);
+        switch (roleIndex)
+        {
+            case 1:
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController"), Vector3.zero, Quaternion.identity);
+                break;
+            case 2:
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController Red"), Vector3.zero, Quaternion.identity);
+                break;
+            case 3:
+                PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "PlayerController Blue"), Vector3.zero, Quaternion.identity);
+                break;
+        }
     }
 }

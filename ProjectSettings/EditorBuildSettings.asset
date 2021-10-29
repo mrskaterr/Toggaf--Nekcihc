@@ -11,4 +11,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Game.unity
     guid: 3b4a376336fede04096b0257cd39adda
+  - enabled: 1
+    path: Assets/Scenes/Astro.unity
+    guid: 1d1c319569a8c9f42adf861b55c47eb6
   m_configObjects: {}

@@ -1,18 +1,28 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
 public class TeamAstro : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    PhotonView PV;
+
+    private void Start()
     {
-        
+        PV = GetComponent<PhotonView>();
+        AstroSetUp();
     }
 
-    // Update is called once per frame
-    void Update()
+    void AstroSetUp()
     {
-        
+        PlayerController player = GetComponent<PlayerController>();
+        if(player.roleIndex == 1)
+        {
+
+        }
+        else
+        {
+            Destroy(this);
+        }
     }
 }
