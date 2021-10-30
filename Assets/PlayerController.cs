@@ -216,7 +216,6 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
                 ind++;
             }
         }
-        Debug.Log(ind);
         if (ind > 0)
         {
             int index = Random.Range(0, ind);
