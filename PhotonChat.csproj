@@ -257,9 +257,6 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-<<<<<<< HEAD
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
-=======
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
@@ -630,7 +627,6 @@
     </Reference>
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
->>>>>>> main
     </Reference>
   </ItemGroup>
   <ItemGroup>

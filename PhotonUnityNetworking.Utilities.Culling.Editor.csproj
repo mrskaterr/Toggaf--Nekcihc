@@ -244,9 +244,6 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.XRModule.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor">
-<<<<<<< HEAD
-      <HintPath>C:\Program Files\Unity\Editor\Data\Managed/UnityEditor.dll</HintPath>
-=======
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.Graphs">
@@ -623,16 +620,11 @@
     </Reference>
     <Reference Include="UnityEngine.TestRunner">
       <HintPath>Library\ScriptAssemblies\UnityEngine.TestRunner.dll</HintPath>
->>>>>>> main
     </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-<<<<<<< HEAD
-      <Project>{CE565ACE-D118-0C2A-E2EF-BC6A62EB4221}</Project>
-=======
       <Project>{84264245-4DC6-090F-3716-C77B320BF2D4}</Project>
->>>>>>> main
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
   </ItemGroup>
