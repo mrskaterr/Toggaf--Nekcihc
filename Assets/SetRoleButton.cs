@@ -16,4 +16,9 @@ public class SetRoleButton : MonoBehaviour
 
         Launcher.instance.RoleDisplay();
     }
+
+    private void Start()
+    {
+        Launcher.instance.RoleDisplay();
+    }
 }
