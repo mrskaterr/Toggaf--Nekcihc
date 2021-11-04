@@ -27,7 +27,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 
     public int roleIndex = 0;
 
-    bool caught;
+    bool caught, eliminated;
+    [SerializeField] bool human;
 
     private void Awake()
     {
@@ -40,7 +41,10 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         Cursor.lockState = CursorLockMode.Locked;
         if (PV.IsMine)
         {
-            EquipItem(0);
+            if (human)
+            {
+                EquipItem(0); 
+            }
         }
         else
         {
@@ -56,6 +60,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         }
         transform.position = Spawns.instance.points[roleIndex - 1].position;
         transform.eulerAngles = Spawns.instance.points[roleIndex - 1].eulerAngles;
+        if (roleIndex == 1) { human = true; }
     }
 
     private void Update()
@@ -68,41 +73,44 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 
         Jump();
 
-        for (int i = 0; i < items.Length; i++)
+        if (human)
         {
-            if(Input.GetKeyDown((i + 1).ToString()))
+            for (int i = 0; i < items.Length; i++)
             {
-                EquipItem(i);
-                break;
+                if (Input.GetKeyDown((i + 1).ToString()))
+                {
+                    EquipItem(i);
+                    break;
+                }
             }
-        }
 
-        if (Input.GetAxisRaw("Mouse ScrollWheel") > 0f)
-        {
-            if (itemIndex >= items.Length - 1)
+            if (Input.GetAxisRaw("Mouse ScrollWheel") > 0f)
             {
-                EquipItem(0);
+                if (itemIndex >= items.Length - 1)
+                {
+                    EquipItem(0);
+                }
+                else
+                {
+                    EquipItem(itemIndex + 1);
+                }
             }
-            else
+            else if (Input.GetAxisRaw("Mouse ScrollWheel") < 0f)
             {
-                EquipItem(itemIndex + 1);
+                if (itemIndex <= 0)
+                {
+                    EquipItem(items.Length - 1);
+                }
+                else
+                {
+                    EquipItem(itemIndex - 1);
+                }
             }
-        }
-        else if (Input.GetAxisRaw("Mouse ScrollWheel") < 0f)
-        {
-            if (itemIndex <= 0)
-            {
-                EquipItem(items.Length - 1);
-            }
-            else
-            {
-                EquipItem(itemIndex - 1);
-            }
-        }
 
-        if (Input.GetMouseButtonDown(0))
-        {
-            items[itemIndex].Use();
+            if (Input.GetMouseButtonDown(0))
+            {
+                items[itemIndex].Use();
+            } 
         }
     }
 
@@ -198,17 +206,37 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     {
         PlayerController[] controllers = FindObjectsOfType<PlayerController>();// TODO: zrzucanie PlayerController do playerHoldera w starcie
         PlayerController controller = null;
-        bool con = true;
-        while (con)
+        PlayerController[] cont = new PlayerController[PhotonNetwork.CurrentRoom.MaxPlayers];
+        int ind = 0;
+        for (int i = 0; i < controllers.Length; i++)
         {
-            int index = Random.Range(0, PhotonNetwork.PlayerList.Length);
-            controller = controllers[index];
-            if (controller != this && controller.roleIndex != 1)
+            if (!controllers[i].caught && controllers[i].roleIndex != 1 && controllers[i] != this)
             {
-                con = false;
+                cont[ind] = controllers[i];
+                ind++;
             }
         }
-        controller.cam.gameObject.SetActive(true);
-        cam.gameObject.SetActive(false);
+        if (ind > 0)
+        {
+            int index = Random.Range(0, ind);
+            controller = cont[index];
+
+            controller.cam.gameObject.SetActive(true);
+            if (cam != null)
+            {
+                cam.gameObject.SetActive(false);
+            }
+            PhotonNetwork.Destroy(gameObject);
+        }
+        else
+        {
+            PV.RPC("RPC_EndGame", RpcTarget.All, 2);
+        }
+    }
+
+    [PunRPC]
+    void RPC_EndGame(int index)
+    {
+        PhotonNetwork.LoadLevel(index);
     }
 }
