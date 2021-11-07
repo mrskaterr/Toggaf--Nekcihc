@@ -40,6 +40,7 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+<<<<<<< HEAD
   <ItemGroup>
 <<<<<<< HEAD
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PunTeams.cs" />
@@ -71,6 +72,48 @@
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PlayerNumbering.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\Room\CountdownTimer.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonUnityNetworking.Utilities.asmdef" />
+=======
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.5</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.1.17f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PunTeams.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonView\SmoothSyncMovement.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\GraphicToggleIsOnTransition.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Debugging\PhotonStatsGui.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\TextToggleIsOnTransition.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\ButtonInsideScrollList.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Culling\CullingHandler.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\TabViewManager.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnStartDelete.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Culling\CullArea.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnClickRpc.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PunPlayerScores.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\ConnectAndJoinRandom.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnClickInstantiate.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Debugging\StatesGui.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnClickDestroy.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\TextButtonTransition.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Debugging\PointedAtGameObjectInfo.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\TurnBased\PunTurnManager.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnJoinedInstantiate.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Debugging\PhotonLagSimulationGui.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\EventSystemSpawner.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\UI\OnPointerOverTooltip.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PhotonTeamsManager.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\MoveByKeys.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Prototyping\OnEscapeQuit.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\PlayerNumbering.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\Room\CountdownTimer.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonUnityNetworking.Utilities.asmdef" />
+>>>>>>> Dave
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -267,10 +310,17 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+=======
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+>>>>>>> Dave
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>

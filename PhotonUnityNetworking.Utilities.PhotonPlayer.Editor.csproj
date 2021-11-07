@@ -44,12 +44,30 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+<<<<<<< HEAD
   <ItemGroup>
 <<<<<<< HEAD
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PhotonTeamsManagerInspector.cs" />
      <Compile Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PlayerNumberingInspector.cs" />
      <None Include="Assets\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.asmdef" />
+=======
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.5</UnityProjectGeneratorVersion>
+    <UnityProjectType>Editor:5</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.1.17f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PunTeamsInspector.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PhotonTeamsManagerInspector.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PlayerNumberingInspector.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Plugins\Photon\PhotonUnityNetworking\UtilityScripts\PhotonPlayer\Editor\PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.asmdef" />
+>>>>>>> Dave
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -246,10 +264,17 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+=======
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+>>>>>>> Dave
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>

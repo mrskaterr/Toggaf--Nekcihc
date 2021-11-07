@@ -40,6 +40,7 @@
     <ImplicitlyExpandNETStandardFacades>false</ImplicitlyExpandNETStandardFacades>
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
+<<<<<<< HEAD
   <ItemGroup>
 <<<<<<< HEAD
      <Compile Include="Assets\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
@@ -63,6 +64,40 @@
      <Compile Include="Assets\Photon\PhotonRealtime\Code\Player.cs" />
      <None Include="Assets\Photon\PhotonRealtime\Code\changes-realtime.txt" />
      <None Include="Assets\Photon\PhotonRealtime\Code\PhotonRealtime.asmdef" />
+=======
+  <PropertyGroup>
+    <ProjectTypeGuids>{E097FAD1-6243-4DAD-9C02-E9B9EFC3FFC1};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <UnityProjectGenerator>Package</UnityProjectGenerator>
+    <UnityProjectGeneratorVersion>2.0.5</UnityProjectGeneratorVersion>
+    <UnityProjectType>Game:1</UnityProjectType>
+    <UnityBuildTarget>StandaloneWindows64:19</UnityBuildTarget>
+    <UnityVersion>2020.1.17f1</UnityVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\LoadbalancingPeer.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\RegionHandler.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Unity\Editor\AccountService.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\AppSettings.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Unity\PhotonAppSettings.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\WebRpc.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\PhotonPing.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\RoomInfo.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\PhotonPingClasses.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\ConnectionHandler.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\FriendInfo.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\CustomTypesUnity.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\LoadBalancingClient.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Extensions.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Room.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Unity\Editor\PhotonEditorUtils.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Region.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\SupportLogger.cs" />
+    <Compile Include="Assets\Plugins\Photon\PhotonRealtime\Code\Player.cs" />
+  </ItemGroup>
+  <ItemGroup>
+     <None Include="Assets\Plugins\Photon\PhotonRealtime\Code\changes-realtime.txt" />
+     <None Include="Assets\Plugins\Photon\PhotonRealtime\Code\PhotonRealtime.asmdef" />
+>>>>>>> Dave
     <Reference Include="UnityEngine">
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
@@ -259,10 +294,17 @@
         <HintPath>C:/Program Files/Unity/Hub/Editor/2020.1.17f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
+<<<<<<< HEAD
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/netstandard2.0/Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Assets/Photon/PhotonLibs/WebSocket/websocket-sharp.dll</HintPath>
+=======
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+    </Reference>
+    <Reference Include="websocket-sharp">
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+>>>>>>> Dave
     </Reference>
     <Reference Include="nunit.framework">
         <HintPath>C:/Users/Waweł/Documents/UnityProject/Toggaf--Nekcihc/Library/PackageCache/com.unity.ext.nunit@1.0.5/net35/unity-custom/nunit.framework.dll</HintPath>
