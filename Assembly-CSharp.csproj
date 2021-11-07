@@ -53,74 +53,44 @@
     <UnityVersion>2020.1.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Assets\GunInfo.cs" />
+    <Compile Include="Assets\Scripts\GunInfo.cs" />
     <Compile Include="Assets\Scripts\RoomListItem.cs" />
-    <Compile Include="Assets\SetRoleButton.cs" />
-    <Compile Include="Assets\TeamBlue.cs" />
-    <Compile Include="Assets\TeamRed.cs" />
-    <Compile Include="Assets\PlayerManager.cs" />
-    <Compile Include="Assets\PlayerGroundCheck.cs" />
+    <Compile Include="Assets\Scripts\SetRoleButton.cs" />
+    <Compile Include="Assets\Scripts\TeamBlue.cs" />
+    <Compile Include="Assets\Scripts\TeamRed.cs" />
+    <Compile Include="Assets\Scripts\PlayerManager.cs" />
+    <Compile Include="Assets\Scripts\PlayerGroundCheck.cs" />
+    <Compile Include="Assets\Scripts\Mine.cs" />
     <Compile Include="Assets\Scripts\PlayerListItem.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
-    <Compile Include="Assets\EndScreen.cs" />
-    <Compile Include="Assets\MouseCam.cs" />
-    <Compile Include="Assets\ItemInfo.cs" />
-    <Compile Include="Assets\PlayerController.cs" />
-    <Compile Include="Assets\ReadRoleTest.cs" />
-    <Compile Include="Assets\PlayerHolder.cs" />
-    <Compile Include="Assets\RoomManager.cs" />
-    <Compile Include="Assets\Morfing.cs" />
-    <Compile Include="Assets\ICatchable.cs" />
+    <Compile Include="Assets\Scripts\EndScreen.cs" />
+    <Compile Include="Assets\Scripts\MouseCam.cs" />
+    <Compile Include="Assets\Scripts\ItemInfo.cs" />
+    <Compile Include="Assets\Scripts\PlayerController.cs" />
+    <Compile Include="Assets\Scripts\ReadRoleTest.cs" />
+    <Compile Include="Assets\Scripts\PlayerHolder.cs" />
+    <Compile Include="Assets\CharacterAnimatorHandler.cs" />
+    <Compile Include="Assets\Scripts\RoomManager.cs" />
+    <Compile Include="Assets\Scripts\Morfing.cs" />
+    <Compile Include="Assets\Scripts\ICatchable.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
-    <Compile Include="Assets\SetTeam.cs" />
-    <Compile Include="Assets\Gun.cs" />
-    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
+    <Compile Include="Assets\Scripts\SetTeam.cs" />
+    <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
-    <Compile Include="Assets\TeamAstro.cs" />
-    <Compile Include="Assets\BlockWhenEmpty.cs" />
-    <Compile Include="Assets\Item.cs" />
-    <Compile Include="Assets\Spawns.cs" />
-    <Compile Include="Assets\BlobCatcher.cs" />
-    <Compile Include="Assets\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
-    <Compile Include="Assets\Detector.cs" />
-    <Compile Include="Assets\Mine.cs" />
+    <Compile Include="Assets\Scripts\TeamAstro.cs" />
+    <Compile Include="Assets\Scripts\BlockWhenEmpty.cs" />
+    <Compile Include="Assets\Scripts\Item.cs" />
+    <Compile Include="Assets\Scripts\Spawns.cs" />
+    <Compile Include="Assets\Scripts\BlobCatcher.cs" />
+    <Compile Include="Assets\Scripts\Detector.cs" />
+    <Compile Include="Assets\BlobAnim.cs" />
+    <Compile Include="Assets\BlobCatch.cs" />
   </ItemGroup>
   <ItemGroup>
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
-     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.xml" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
-     <None Include="Assets\Photon\PhotonUnityNetworking\changelog.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BasicHologram.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
-     <None Include="Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\DistortionRim.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
-     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile SSD.shader" />
-     <None Include="Assets\Photon\PhotonLibs\changes-library.txt" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Leading Characters.txt" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Properties.cginc" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
-     <None Include="Assets\Photon\PhotonUnityNetworking\readme.txt" />
-     <None Include="Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll" />
-     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.dll" />
-     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-     <None Include="Assets\Photon\PhotonLibs\Metro\Photon3Unity3D.dll" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
      <None Include="Assets\Shaders\PeterLu_HologramShader\Documentation.txt" />
-     <None Include="Assets\Photon\PhotonLibs\Photon3Unity3D.xml" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
-     <None Include="Assets\Photon\PhotonUnityNetworking\link.xml" />
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BaiscRim.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile.shader" />
-     <None Include="Assets\TextMesh Pro\Shaders\TMP_Sprite.shader" />
     <Reference Include="UnityEngine">
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>
@@ -311,10 +281,10 @@
       <HintPath>G:\Programy\Unity\2020.1.17f1\Editor\Data\Managed\UnityEditor.dll</HintPath>
     </Reference>
     <Reference Include="Photon3Unity3D">
-      <HintPath>Assets\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\netstandard2.0\Photon3Unity3D.dll</HintPath>
     </Reference>
     <Reference Include="websocket-sharp">
-      <HintPath>Assets\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
+      <HintPath>Assets\Plugins\Photon\PhotonLibs\WebSocket\websocket-sharp.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
       <HintPath>Library\PackageCache\com.unity.ext.nunit@1.0.5\net35\unity-custom\nunit.framework.dll</HintPath>
@@ -717,6 +687,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
+      <Project>{88827E56-22F1-8588-7308-F9379E939095}</Project>
+      <Name>Assembly-CSharp-firstpass</Name>
+    </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
       <Project>{3F57EABF-AB4C-CC03-13B9-BEC4C5451503}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
