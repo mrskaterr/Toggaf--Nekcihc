@@ -17,6 +17,7 @@ GameObject:
   - component: {fileID: 2701529287421734001}
   - component: {fileID: 5333751305398483989}
   - component: {fileID: 2696232279095498005}
+  - component: {fileID: -9155258203074591344}
   m_Layer: 0
   m_Name: PlayerController
   m_TagString: Untagged
@@ -199,6 +200,18 @@ MonoBehaviour:
   astro: {fileID: 2100000, guid: 6a883cfef1a2c1a409a69a6fb6222d20, type: 2}
   red: {fileID: 2100000, guid: 163ab0bf6e6236b4fad7e573255bdc1c, type: 2}
   blue: {fileID: 2100000, guid: 7be9a97094dd7fe458633dc28719bd3f, type: 2}
+--- !u!114 &-9155258203074591344
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 347634870248814550}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7c2f5ea3ac261046a6fc614be253e4a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1042249317746001714
 GameObject:
   m_ObjectHideFlags: 0

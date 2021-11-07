@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     [HideInInspector] public Camera cam;
 
     [SerializeField] float mouseSensitivity, sprintSpeed, walkSpeed, jumpForce, smoothTime;
+    float  _sprintSpeed, _walkSpeed, _jumpForce;
 
     [SerializeField] Item[] items;
 
@@ -25,6 +26,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 
     PhotonView PV;
 
+    
+
     public int roleIndex = 0;
 
     bool caught, eliminated;
@@ -32,6 +35,9 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 
     private void Awake()
     {
+        _jumpForce=jumpForce;
+        _sprintSpeed=sprintSpeed;
+        _walkSpeed=walkSpeed;
         rb = GetComponent<Rigidbody>();
         PV = GetComponent<PhotonView>();
     }
@@ -182,29 +188,44 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         grounded = _grounded;
     }
 
-    public void Catch(bool state)
+    public void Catch(bool state,bool state2)
     {
-        PV.RPC("RPC_Catch", RpcTarget.All, state);//RPC params: method name, target players, method params
+        PV.RPC("RPC_Catch", RpcTarget.All, state,state2);//RPC params: method name, target players, method params
     }
 
     [PunRPC]
-    void RPC_Catch(bool state)
+    void RPC_Catch(bool state, bool state2)
     {
         if (!PV.IsMine)
         {
             return;
         }
         caught = state;
-        //for now ...
+        eliminated=state2;
         if (caught)
+        {
+            DisableMovment();
+        }
+        if (eliminated)
         {
             Spectate();
         }
     }
+   void DisableMovment()
+    {
+        PlayerController[] controllers = FindObjectsOfType<PlayerController>();// TODO: zrzucanie PlayerController do playerHoldera w starcie
+        for (int i = 0; i < controllers.Length; i++)
+        {
+            if (controllers[i].caught && controllers[i].roleIndex != 1 )
+            {
+                GetComponent<SetFree>().enabled=true;
+            }
+        } 
+    } 
 
     void Spectate()
     {
-        PlayerController[] controllers = FindObjectsOfType<PlayerController>();// TODO: zrzucanie PlayerController do playerHoldera w starcie
+        PlayerController[] controllers = FindObjectsOfType<PlayerController>();  // TODO: zrzucanie PlayerController do playerHoldera w starcie
         PlayerController controller = null;
         PlayerController[] cont = new PlayerController[PhotonNetwork.CurrentRoom.MaxPlayers];
         int ind = 0;
@@ -238,5 +259,21 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     void RPC_EndGame(int index)
     {
         PhotonNetwork.LoadLevel(index);
+    }
+    public void SetMovement(bool _p)
+    {
+        if(_p)
+        {
+            sprintSpeed=_jumpForce;
+            walkSpeed=_jumpForce;
+            jumpForce=_jumpForce;
+        }
+        else
+        {
+            sprintSpeed=0;
+            walkSpeed=0;
+            jumpForce=0;
+        }
+
     }
 }
