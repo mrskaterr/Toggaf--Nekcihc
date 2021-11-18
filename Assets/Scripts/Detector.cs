@@ -17,6 +17,6 @@ public class Detector : Gun
     void Place()
     {
         //GameObject g = Instantiate(mine, cam.transform.position + transform.forward * 2, transform.rotation);
-        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Mine"), cam.transform.position + transform.forward * 2, transform.rotation);
+        PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", "Detector"), cam.transform.position + transform.forward * 2, transform.rotation);
     }
 }
