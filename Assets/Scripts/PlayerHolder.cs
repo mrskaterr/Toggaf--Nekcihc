@@ -13,13 +13,14 @@ public class PlayerHolder : MonoBehaviour
         instance = this;
     }
 
-    public List<PlayerDesc> players;
+    //public List<PlayerDesc> players;
+    public List<PlayerController> players;
 }
 
-[System.Serializable]
-public class PlayerDesc
-{
-    public Photon.Realtime.Player player;
-    public GameObject playerObject;
-    public int roleIndex;
-}
+//[System.Serializable]
+//public class PlayerDesc
+//{
+//    public Photon.Realtime.Player player;
+//    public GameObject playerObject;
+//    public int roleIndex;
+//}
