@@ -53,6 +53,7 @@
     <UnityVersion>2020.1.17f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Assets\Door.cs" />
     <Compile Include="Assets\Scripts\GunInfo.cs" />
     <Compile Include="Assets\Scripts\RoomListItem.cs" />
     <Compile Include="Assets\Scripts\SetRoleButton.cs" />
@@ -64,6 +65,7 @@
     <Compile Include="Assets\Scripts\PlayerGroundCheck.cs" />
     <Compile Include="Assets\Scripts\BlobCatch.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
+    <Compile Include="Assets\RandomChangeMaterial.cs" />
     <Compile Include="Assets\Scripts\PlayerListItem.cs" />
     <Compile Include="Assets\Scripts\DetectInfo.cs" />
     <Compile Include="Assets\Scripts\MenuManager.cs" />
@@ -96,7 +98,7 @@
     <Compile Include="Assets\Patrol.cs" />
     <Compile Include="Assets\Scripts\Detector.cs" />
     <Compile Include="Assets\Scripts\BlobAnim.cs" />
-    <Compile Include="Assets\RandomChangeMaterial.cs" />
+    <Compile Include="Assets\BigDrone.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BasicHologram.shader" />
@@ -687,6 +689,9 @@
     </Reference>
     <Reference Include="Unity.Rider.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
       <HintPath>Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
