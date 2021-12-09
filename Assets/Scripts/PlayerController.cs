@@ -206,10 +206,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         }
         caught = state;
         eliminated = state2;
-        if (caught)
-        {
-            SetMovement(false);
-        }
+        SetMovement(!state);
         if (eliminated)
         {
             Spectate();
@@ -257,8 +254,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     {
         if (_p)
         {
-            sprintSpeed = _jumpForce;
-            walkSpeed = _jumpForce;
+            sprintSpeed = _sprintSpeed;
+            walkSpeed = _walkSpeed;
             jumpForce = _jumpForce;
         }
         else

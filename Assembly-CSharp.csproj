@@ -62,6 +62,7 @@
     <Compile Include="Assets\BlobCatcherBulletB.cs" />
     <Compile Include="Assets\Scripts\PlayerManager.cs" />
     <Compile Include="Assets\FreezeRotation.cs" />
+    <Compile Include="Assets\BigDrone.cs" />
     <Compile Include="Assets\Scripts\PlayerGroundCheck.cs" />
     <Compile Include="Assets\Scripts\BlobCatch.cs" />
     <Compile Include="Assets\Scripts\Mine.cs" />
@@ -98,7 +99,7 @@
     <Compile Include="Assets\Patrol.cs" />
     <Compile Include="Assets\Scripts\Detector.cs" />
     <Compile Include="Assets\Scripts\BlobAnim.cs" />
-    <Compile Include="Assets\BigDrone.cs" />
+    <Compile Include="Assets\DestroyOther.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BasicHologram.shader" />
