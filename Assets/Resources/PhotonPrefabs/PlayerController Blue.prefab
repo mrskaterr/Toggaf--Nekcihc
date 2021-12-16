@@ -1573,16 +1573,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 6905591999679393501}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 32a4cb8768877f247b045e8563a9a34f, type: 3}
+  m_Script: {fileID: 11500000, guid: cb34f60db6ace1149b506c5ab055f6ff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraHolder: {fileID: 3682746647171447800}
   cam: {fileID: 0}
   mouseSensitivity: 3
-  sprintSpeed: 0.5
+  sprintSpeed: 3
   walkSpeed: 3
-  jumpForce: 250
-  smoothTime: 0.15
+  jumpForce: 3
+  smoothTime: 3
   items: []
   grounded: 0
   roleIndex: 0

@@ -65,8 +65,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
             //roleIndex = (int)PhotonNetwork.LocalPlayer.CustomProperties["RoleID"];
             roleIndex = (int)PV.Owner.CustomProperties["RoleID"];
         }
-        transform.position = Spawns.instance.points[roleIndex - 1].position;
-        transform.eulerAngles = Spawns.instance.points[roleIndex - 1].eulerAngles;
+//        transform.position = Spawns.instance.points[roleIndex - 1].position;
+        //transform.eulerAngles = Spawns.instance.points[roleIndex - 1].eulerAngles;
         if (roleIndex == 1) { human = true; }
         PlayerHolder.instance.players.Add(this);
     }
