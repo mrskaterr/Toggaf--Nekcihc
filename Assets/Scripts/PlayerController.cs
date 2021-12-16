@@ -162,10 +162,12 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         itemIndex = _index;
 
         items[itemIndex].itemGameObject.SetActive(true);
+        items[itemIndex].itemUI.SetActive(true);
 
         if (previousItemIndex != -1)
         {
             items[previousItemIndex].itemGameObject.SetActive(false);
+            items[previousItemIndex].itemUI.SetActive(false);
         }
 
         previousItemIndex = itemIndex;
@@ -206,10 +208,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         }
         caught = state;
         eliminated = state2;
-        if (caught)
-        {
-            SetMovement(false);
-        }
+        SetMovement(!state);
         if (eliminated)
         {
             Spectate();
@@ -224,7 +223,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         int ind = 0;
         for (int i = 0; i < controllers.Length; i++)
         {
-            if (!controllers[i].caught && controllers[i].roleIndex != 1 && controllers[i] != this)
+            if (CheckBlob(controllers[i]))
             {
                 cont[ind] = controllers[i];
                 ind++;
@@ -233,9 +232,16 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         if (ind > 0)
         {
             int index = Random.Range(0, ind);
+            while (!CheckBlob(cont[index]))
+            {
+                index = Random.Range(0, ind);
+            }
             controller = cont[index];
-
-            controller.cam.gameObject.SetActive(true);
+            Debug.Log(controller.name);
+            if (controller.cam != null)
+            {
+                controller.cam.gameObject.SetActive(true);
+            }
             if (cam != null)
             {
                 cam.gameObject.SetActive(false);
@@ -248,6 +254,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
         }
     }
 
+    bool CheckBlob(PlayerController player)
+    {
+        return player != null && player != this && player.roleIndex != 1 && !player.eliminated;
+    }
+
     [PunRPC]
     void RPC_EndGame(int index)
     {
@@ -257,8 +268,8 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     {
         if (_p)
         {
-            sprintSpeed = _jumpForce;
-            walkSpeed = _jumpForce;
+            sprintSpeed = _sprintSpeed;
+            walkSpeed = _walkSpeed;
             jumpForce = _jumpForce;
         }
         else

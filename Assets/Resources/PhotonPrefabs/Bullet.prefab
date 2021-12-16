@@ -4927,7 +4927,7 @@ MonoBehaviour:
   speed: 150
   particles: {fileID: 5974882291845449334}
   dissolution: {fileID: 8657282376058365921, guid: 7fef085b3aa6faa4986c10534777f8bb, type: 3}
-  radius: 0.5
+  radius: 0.125
   range: 2.5
   target:
     serializedVersion: 2
