@@ -23,6 +23,11 @@ public class BlobCatcher : Gun
     [SerializeField] Image HUD_img;
     [SerializeField] Image HUD_bg;
     [SerializeField] Text HUD_txt;
+    [SerializeField] Image HUD_bar;
+
+    [SerializeField] GameObject HUD_gun1;
+    [SerializeField] GameObject HUD_gun2;
+
     [SerializeField] new MeshRenderer renderer;
 
     [SerializeField] GameObject bullet;
@@ -32,15 +37,57 @@ public class BlobCatcher : Gun
 
     [SerializeField] PhotonView PV;
 
+    [Space]
+
+    [SerializeField] int maxAmmo1 = 5;
+    int curAmmo1;
+    [SerializeField] float cooldown1 = 3;
+    float waitTime1;
+
+    [Space]
+
+    [SerializeField] int maxAmmo2 = 3;
+    int curAmmo2;
+    [SerializeField] float cooldown2 = 3;
+    float waitTime2;
+
+    bool rech1, rech2;
+
+    const float tickTime = .01f;
+    WaitForSeconds tick = new WaitForSeconds(tickTime);
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
         PV = GetComponent<PhotonView>();
     }
 
+    private void Start()
+    {
+        curAmmo1 = maxAmmo1;
+        curAmmo2 = maxAmmo2;
+    }
+
     public override void Use()
     {
-        Shoot();
+        if (mode && curAmmo1 > 0)
+        {
+            Shoot();
+            curAmmo1--;
+            if (!rech1)
+            {
+                StartCoroutine(Recharge1());
+            }
+        }
+        else if(!mode && curAmmo2 > 0)
+        {
+            Shoot();
+            curAmmo2--;
+            if (!rech2)
+            {
+                StartCoroutine(Recharge2());
+            }
+        }
     }
     private void Update()
     {
@@ -48,10 +95,24 @@ public class BlobCatcher : Gun
         {
             animator.SetTrigger("swap");
         }
+        if (mode)
+        {
+            HUD_txt.text = curAmmo1 + " / " + maxAmmo1;
+            HUD_bar.fillAmount = waitTime1 / cooldown1;
+        }
+        else if (!mode)
+        {
+            HUD_txt.text = curAmmo2 + " / " + maxAmmo2;
+            HUD_bar.fillAmount = waitTime2 / cooldown2;
+        }
     }
     void ChangeMode()
     {
         PV.RPC("RPC_ChangeMode", RpcTarget.All);
+        itemUI.SetActive(false);
+        if (mode) { itemUI = HUD_gun1; }
+        else if (!mode) { itemUI = HUD_gun2; }
+        itemUI.SetActive(true);
     }
     [PunRPC]
     void RPC_ChangeMode()
@@ -93,6 +154,54 @@ public class BlobCatcher : Gun
         {
             shootPoint.localEulerAngles = Vector3.zero;
             Destroy(Instantiate(bullet, shootPoint.position, shootPoint.rotation), 1f);
+        }
+    }
+
+    IEnumerator Recharge1()
+    {
+        rech1 = true;
+        if (curAmmo1 < maxAmmo1)
+        {
+            waitTime1 = 0;
+            while (waitTime1 < cooldown1)
+            {
+                yield return tick;
+                waitTime1 += tickTime;
+            }
+            curAmmo1++; 
+        }
+        if (curAmmo1 < maxAmmo1)
+        {
+            StartCoroutine(Recharge1());
+        }
+        else
+        {
+            rech1 = false;
+            waitTime1 = 0;
+        }
+    }
+
+    IEnumerator Recharge2()
+    {
+        rech2 = true;
+        if (curAmmo2 < maxAmmo2)
+        {
+            waitTime2 = 0;
+            while (waitTime2 < cooldown2)
+            {
+                yield return tick;
+                waitTime2 += tickTime;
+            }
+            curAmmo2++;
+        }
+        if (curAmmo2 < maxAmmo2)
+        {
+            StartCoroutine(Recharge2());
+        }
+        else 
+        { 
+            rech2 = false;
+            waitTime2 = 0;
         }
     }
 }

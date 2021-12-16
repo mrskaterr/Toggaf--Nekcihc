@@ -78,17 +78,23 @@
     <Compile Include="Assets\Scripts\PlayerController.cs" />
     <Compile Include="Assets\Scripts\ReadRoleTest.cs" />
     <Compile Include="Assets\Scripts\PlayerHolder.cs" />
+    <Compile Include="Assets\DestroyOther.cs" />
     <Compile Include="Assets\Scripts\CharacterAnimatorHandler.cs" />
     <Compile Include="Assets\Bullet.cs" />
     <Compile Include="Assets\Scripts\RoomManager.cs" />
     <Compile Include="Assets\Scripts\AstroAnim.cs" />
+    <Compile Include="Assets\Interact.cs" />
     <Compile Include="Assets\Scripts\Morfing.cs" />
     <Compile Include="Assets\Scripts\ICatchable.cs" />
     <Compile Include="Assets\Scripts\Menu.cs" />
     <Compile Include="Assets\Scripts\SetTeam.cs" />
     <Compile Include="Assets\Scripts\Gun.cs" />
     <Compile Include="Assets\CleanDrone.cs" />
+    <Compile Include="Assets\GameTime.cs" />
     <Compile Include="Assets\Scripts\SetFree.cs" />
+    <Compile Include="Assets\Interacting.cs" />
+    <Compile Include="Assets\Cage.cs" />
+    <Compile Include="Assets\RotateObject.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
     <Compile Include="Assets\MorphAnim.cs" />
     <Compile Include="Assets\Scripts\TeamAstro.cs" />
@@ -99,7 +105,7 @@
     <Compile Include="Assets\Patrol.cs" />
     <Compile Include="Assets\Scripts\Detector.cs" />
     <Compile Include="Assets\Scripts\BlobAnim.cs" />
-    <Compile Include="Assets\DestroyOther.cs" />
+    <Compile Include="Assets\ThirdPerson.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BasicHologram.shader" />

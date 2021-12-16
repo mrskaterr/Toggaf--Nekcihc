@@ -6,6 +6,7 @@ public abstract class Item : MonoBehaviour
 {
     public ItemInfo itemInfo;
     public GameObject itemGameObject;
+    public GameObject itemUI;
 
     public abstract void Use();
 }

@@ -11,7 +11,7 @@ public class BlobCatch : MonoBehaviour
     public void SetFree(bool _p)
     {
         cage.SetActive(!_p);
-        UI.SetActive(!_p);
+        if (UI != null) { UI.SetActive(!_p); }
         //body.SetActive(_p);
     }
 }

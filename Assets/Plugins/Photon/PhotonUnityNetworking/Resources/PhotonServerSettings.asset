@@ -45,6 +45,7 @@ MonoBehaviour:
   - RPC_EndGame
   - RPC_Morph
   - RPC_ChangeMode
+  - RPC_RemovePlayerFromList
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1
