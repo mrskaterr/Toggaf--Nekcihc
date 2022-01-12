@@ -1,21 +1,44 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class SetFree : MonoBehaviour
 {
-    int HowMany=10;
-    
-    void Update()
+    [SerializeField] int clickAmount = 10;
+    int currentClicksAmount;
+    [SerializeField] Image bar;
+    [SerializeField] PlayerController controller;
+
+    private void OnEnable()
     {
-        if(Input.GetButtonDown("F"))
-            --HowMany;
-        
-        if(HowMany<=0)
+        currentClicksAmount = 0;
+        bar.fillAmount = 0;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.E))
         {
-            
+            LoadBar();
         }
+    }
 
+    void LoadBar()
+    {
+        currentClicksAmount++;
+        if (currentClicksAmount >= clickAmount)
+        {
+            controller.GetComponent<ICatchable>()?.Catch(false);
+        }
+        else
+        {
+            FillBar();
+        }
+    }
 
+    void FillBar()
+    {
+        bar.fillAmount = (float)currentClicksAmount / (float)clickAmount;
     }
 }

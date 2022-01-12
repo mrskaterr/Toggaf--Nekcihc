@@ -1,8 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Photon.Pun;
 
-public class Mine : MonoBehaviour
+public class Mine : Interact
 {
     [SerializeField] float speed;
     [SerializeField] float rotation;
@@ -46,6 +47,13 @@ public class Mine : MonoBehaviour
                 player.GetComponent<DetectInfo>().SetDetectInfoState(param);
             }
         }
+    }
+
+    public override void Interacting(GameObject whoInteracts = null)
+    {
+        Detector detector = whoInteracts.GetComponentInChildren<Detector>();
+        if (detector != null) { detector.ammo++; }
+        PhotonNetwork.Destroy(gameObject);
     }
 
     private void OnDrawGizmosSelected()
