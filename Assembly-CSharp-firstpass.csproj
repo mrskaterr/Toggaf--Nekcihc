@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{88827E56-22F1-8588-7308-F9379E939095}</ProjectGuid>
+    <ProjectGuid>{289ECB89-B027-61C8-BF84-14CE401BB51D}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-firstpass</AssemblyName>
@@ -58,8 +58,6 @@
   <ItemGroup>
     <Compile Include="Assets\Plugins\Photon\PhotonLibs\WebSocket\SocketWebTcp.cs" />
     <Compile Include="Assets\Plugins\Photon\PhotonLibs\WebSocket\WebSocket.cs" />
-    <Compile Include="Assets\Plugins\Stylized Astronaut\Character\ThirdPersonCamera.cs" />
-    <Compile Include="Assets\Plugins\Stylized Astronaut\Character\Player.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Plugins\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -734,31 +732,31 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.PhotonPlayer.Editor.csproj">
-      <Project>{3F57EABF-AB4C-CC03-13B9-BEC4C5451503}</Project>
+      <Project>{09D2E2A1-9EBD-B8AE-327A-775033DB62F9}</Project>
       <Name>PhotonUnityNetworking.Utilities.PhotonPlayer.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.csproj">
-      <Project>{84264245-4DC6-090F-3716-C77B320BF2D4}</Project>
+      <Project>{74572CE4-E172-392E-EE9E-9A7F8607D8BD}</Project>
       <Name>PhotonUnityNetworking.Utilities</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonRealtime.csproj">
-      <Project>{886C99A9-3522-59C2-BE8C-173E3856590A}</Project>
+      <Project>{6510D65D-9D34-86B8-40AE-5BD704DBD956}</Project>
       <Name>PhotonRealtime</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.csproj">
-      <Project>{A826E2CC-530F-8F01-D8EE-CA8F274C2EF4}</Project>
+      <Project>{E84AE998-E5B5-9C98-06A8-927A6F4C0683}</Project>
       <Name>PhotonUnityNetworking</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonChat.csproj">
-      <Project>{DBC0CBB2-C2F8-0D46-5C78-30E6659A2257}</Project>
+      <Project>{35A2E4EA-9526-56E8-55CA-25D8833B500F}</Project>
       <Name>PhotonChat</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Utilities.Culling.Editor.csproj">
-      <Project>{9EEAE69B-4AD6-2D26-DD3E-DA8ADF7A5059}</Project>
+      <Project>{E478899C-E06D-8598-210E-298E66E5ED33}</Project>
       <Name>PhotonUnityNetworking.Utilities.Culling.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="PhotonUnityNetworking.Editor.csproj">
-      <Project>{7A61FC9D-1800-B07E-C835-535D72012F65}</Project>
+      <Project>{1FE68A78-CB87-3F37-6E40-CE3CCDDF0A74}</Project>
       <Name>PhotonUnityNetworking.Editor</Name>
     </ProjectReference>
   </ItemGroup>
