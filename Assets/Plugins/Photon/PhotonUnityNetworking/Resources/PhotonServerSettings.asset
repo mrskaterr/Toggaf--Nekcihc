@@ -19,7 +19,7 @@ MonoBehaviour:
     AppIdVoice: 
     AppVersion: 
     UseNameServer: 1
-    FixedRegion: 
+    FixedRegion: EU
     Server: 
     Port: 0
     ProxyServer: 
@@ -46,6 +46,8 @@ MonoBehaviour:
   - RPC_Morph
   - RPC_ChangeMode
   - RPC_RemovePlayerFromList
+  - RPC_BlockButton
+  - RPC_ClearButton
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

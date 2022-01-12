@@ -63,6 +63,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 11
       objectReference: {fileID: 0}
+    - target: {fileID: 1186747741370768556, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1204983015163752708, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_Layer
       value: 11
@@ -162,6 +166,10 @@ PrefabInstance:
     - target: {fileID: 2611472031349098966, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 2618457988219562660, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2619511732781989415, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: particles
@@ -310,6 +318,10 @@ PrefabInstance:
     - target: {fileID: 5195337824310007991, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_Layer
       value: 11
+      objectReference: {fileID: 0}
+    - target: {fileID: 5198804945688007350, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5207957151306907576, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_Layer
@@ -469,7 +481,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6323000616556547070, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_CullingMask.m_Bits
-      value: 5943
+      value: 30519
       objectReference: {fileID: 0}
     - target: {fileID: 6340712328942701755, guid: e3c80347e0a01eb4ab830b4f138c282d, type: 3}
       propertyPath: m_Layer

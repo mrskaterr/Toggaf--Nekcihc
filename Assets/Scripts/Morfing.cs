@@ -22,6 +22,8 @@ public class Morfing : MonoBehaviour
 
     [SerializeField] string particlesName;
 
+    [SerializeField] Camera camf, camt;
+
     public bool morphed;
     PhotonView PV;
     PlayerController playerController;
@@ -131,6 +133,7 @@ public class Morfing : MonoBehaviour
         Player.SetActive(true);
         eye.enabled = true;
         eye2.enabled = true;
+        if (PV.Owner == PhotonNetwork.LocalPlayer) { CamSwap(true); }
     }
 
     [PunRPC]
@@ -143,6 +146,21 @@ public class Morfing : MonoBehaviour
         DisAll();
         propList[index].SetActive(true);
         Destroy(PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", particlesName), transform.position + Vector3.up * .5f, transform.rotation), 10f);
+        if (PV.Owner == PhotonNetwork.LocalPlayer) { CamSwap(false); }
+    }
+
+    void CamSwap(bool _p)
+    {
+        if (_p)
+        {
+            camt.gameObject.SetActive(false);
+            camf.gameObject.SetActive(true);
+        }
+        else
+        {
+            camf.gameObject.SetActive(false);
+            camt.gameObject.SetActive(true);
+        }
     }
 }
 //[System.Serializable]//do zmiany ruchu

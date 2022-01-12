@@ -149,6 +149,7 @@ public class BlobCatcher : Gun
             //hit.collider.gameObject.GetComponent<ICatchable>()?.Catch(true);
             shootPoint.LookAt(hit.point);
             Destroy(Instantiate(bullet, shootPoint.position, shootPoint.rotation), 2f);
+            //Destroy(Instantiate(bullet, cam.transform.position, shootPoint.rotation), 2f);
         }
         else
         {

@@ -24,7 +24,7 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
 
     Rigidbody rb;
 
-    PhotonView PV;
+    [HideInInspector]public PhotonView PV;
 
     BlobCatch blobCatch;
 

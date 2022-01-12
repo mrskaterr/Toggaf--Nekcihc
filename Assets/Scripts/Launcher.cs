@@ -23,7 +23,9 @@ public class Launcher : MonoBehaviourPunCallbacks
     [SerializeField] GameObject roomListItemPrefab;
     [SerializeField] GameObject playerListItemPrefab;
     [SerializeField] GameObject startGameButton;
+    [SerializeField] GameObject readyButton;
     [SerializeField] TMP_InputField nickInputField;
+    [SerializeField] RoleButtonsParent rolesBtns;
 
     private void Start()
     {
@@ -86,11 +88,16 @@ public class Launcher : MonoBehaviourPunCallbacks
     public override void OnMasterClientSwitched(Player newMasterClient)
     {
         //startGameButton.SetActive(PhotonNetwork.IsMasterClient);
+        if (newMasterClient.CustomProperties.ContainsKey("Ready"))
+        {
+            newMasterClient.CustomProperties["Ready"] = false;
+            newMasterClient.SetCustomProperties(newMasterClient.CustomProperties);
+        }
     }
 
     private void Update()
     {
-        if(PhotonNetwork.IsMasterClient && CheckTeams())
+        if(PhotonNetwork.IsMasterClient && CheckTeams() && ArePlayersReady())
         {
             startGameButton.SetActive(true);
         }
@@ -98,6 +105,7 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             startGameButton.SetActive(false);
         }
+        readyButton.SetActive(!PhotonNetwork.IsMasterClient);
     }
 
     public override void OnCreateRoomFailed(short returnCode, string message)
@@ -168,6 +176,7 @@ public class Launcher : MonoBehaviourPunCallbacks
             if (PhotonNetwork.PlayerList[i].CustomProperties.ContainsKey("RoleID"))
             {
                 int tmp = (int)PhotonNetwork.PlayerList[i].CustomProperties["RoleID"];
+                if (tmp == 0) { return false; }//brak roli alt
                 if (!roles.Contains(tmp))
                 {
                     roles.Add(tmp);
@@ -182,6 +191,23 @@ public class Launcher : MonoBehaviourPunCallbacks
         return true;
     }
 
+    bool ArePlayersReady()
+    {
+        for (int i = 0; i < PhotonNetwork.PlayerList.Length; i++)
+        {
+            if (PhotonNetwork.PlayerList[i].IsMasterClient) { continue; }
+            if (PhotonNetwork.PlayerList[i].CustomProperties.ContainsKey("Ready"))
+            {
+                if (!(bool)PhotonNetwork.PlayerList[i].CustomProperties["Ready"]) { return false; }
+            }
+            else 
+            { 
+                return false; 
+            }
+        }
+        return true;
+    }
+
     [PunRPC]
     void RPC_RoleDisplay()
     {
@@ -189,5 +215,18 @@ public class Launcher : MonoBehaviourPunCallbacks
         {
             pLI.SetRoleDisplay();
         }
+    }
+
+    public void SetReady(bool _p)
+    {
+        if (!PhotonNetwork.LocalPlayer.CustomProperties.ContainsKey("Ready"))
+        {
+            PhotonNetwork.LocalPlayer.CustomProperties.Add("Ready", _p);
+        }
+        else
+        {
+            PhotonNetwork.LocalPlayer.CustomProperties["Ready"] = _p;
+        }
+        PhotonNetwork.LocalPlayer.SetCustomProperties(PhotonNetwork.LocalPlayer.CustomProperties);
     }
 }
