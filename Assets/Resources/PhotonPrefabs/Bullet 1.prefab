@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3742575990204149658}
   - component: {fileID: 8366652711902260902}
   - component: {fileID: 1477869730912916505}
-  m_Layer: 0
+  m_Layer: 15
   m_Name: Bullet 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -111,11 +111,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43401863c71c9d742b3bf7654c828152, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 50
+  speed: 75
   particles: {fileID: 0}
   dissolution: {fileID: 8657282376058365921, guid: 10eb1e7e5732788459028d9e5b4cad48, type: 3}
-  radius: 0.25
-  range: 0.26
+  radius: 0.1
+  range: 0.4
   target:
     serializedVersion: 2
     m_Bits: 6144
+  ignore:
+    serializedVersion: 2
+    m_Bits: 6657
