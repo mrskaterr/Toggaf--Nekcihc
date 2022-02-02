@@ -56,6 +56,8 @@ public class BlobCatcher : Gun
     const float tickTime = .01f;
     WaitForSeconds tick = new WaitForSeconds(tickTime);
 
+    [SerializeField] RecoilController recoilController;
+
     private void Awake()
     {
         animator = GetComponent<Animator>();
@@ -144,6 +146,7 @@ public class BlobCatcher : Gun
     {
         Ray ray = cam.ViewportPointToRay(new Vector3(.5f, .5f));
         ray.origin = cam.transform.position;
+        recoilController.StartRecoil();
         if (Physics.Raycast(ray, out RaycastHit hit))
         {
             //hit.collider.gameObject.GetComponent<ICatchable>()?.Catch(true);

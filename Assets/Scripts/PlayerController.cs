@@ -278,6 +278,21 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
             walkSpeed = 0;
             jumpForce = 0;
         }
+    }
 
+    public void Slowness(bool _p, float _div = 2)
+    {
+        if (!_p)
+        {
+            sprintSpeed = _sprintSpeed;
+            walkSpeed = _walkSpeed;
+            jumpForce = _jumpForce;
+        }
+        else
+        {
+            sprintSpeed = _sprintSpeed / _div;
+            walkSpeed = _walkSpeed / _div;
+            jumpForce = 0;
+        }
     }
 }

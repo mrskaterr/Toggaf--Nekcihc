@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Photon.Pun;
 
 public class Tasks : MonoBehaviour
 {
@@ -36,7 +37,7 @@ public class Tasks : MonoBehaviour
         }
         foreach (Task t in activeTasks)
         {
-            t.Init();
+            if((int)PhotonNetwork.LocalPlayer.CustomProperties["RoleID"] != 1) { t.Init(); }
         }
     }
 

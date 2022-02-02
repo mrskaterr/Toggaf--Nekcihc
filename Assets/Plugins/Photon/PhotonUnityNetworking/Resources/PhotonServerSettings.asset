@@ -48,6 +48,7 @@ MonoBehaviour:
   - RPC_RemovePlayerFromList
   - RPC_BlockButton
   - RPC_ClearButton
+  - RPC_SetAnimParam
   DisableAutoOpenWizard: 1
   ShowSettings: 1
   DevRegionSetOnce: 1

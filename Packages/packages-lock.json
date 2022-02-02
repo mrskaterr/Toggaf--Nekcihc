@@ -89,11 +89,11 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.render-pipelines.lightweight": {
-      "version": "7.4.1",
+      "version": "8.3.1",
       "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.render-pipelines.universal": "7.4.1",
+        "com.unity.render-pipelines.universal": "8.3.1",
         "com.unity.postprocessing": "2.1.7"
       },
       "url": "https://packages.unity.com"

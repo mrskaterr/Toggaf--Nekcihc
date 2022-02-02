@@ -98,6 +98,7 @@
     <Compile Include="Assets\Scripts\Interacting.cs" />
     <Compile Include="Assets\Scripts\Cage.cs" />
     <Compile Include="Assets\Scripts\Tasks.cs" />
+    <Compile Include="Assets\Scripts\ReadyButton.cs" />
     <Compile Include="Assets\Scripts\RotateObject.cs" />
     <Compile Include="Assets\Scripts\Launcher.cs" />
     <Compile Include="Assets\Scripts\Hack_Panel.cs" />
@@ -116,7 +117,9 @@
     <Compile Include="Assets\Scripts\Detector.cs" />
     <Compile Include="Assets\Scripts\Task.cs" />
     <Compile Include="Assets\Scripts\BlobAnim.cs" />
-    <Compile Include="Assets\Scripts\ReadyButton.cs" />
+    <Compile Include="Assets\Scripts\RecoilController.cs" />
+    <Compile Include="Assets\BlobOthers.cs" />
+    <Compile Include="Assets\ForceField.cs" />
   </ItemGroup>
   <ItemGroup>
      <None Include="Assets\Shaders\PeterLu_HologramShader\Shader\BasicHologram.shader" />
