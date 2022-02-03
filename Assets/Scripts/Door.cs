@@ -6,7 +6,6 @@ using Photon.Realtime;
 
 public class Door : MonoBehaviour
 {
-    [SerializeField] LayerMask acceptableLayers;
     Animator animator;
     PhotonView PV;
 

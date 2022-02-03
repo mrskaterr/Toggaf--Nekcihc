@@ -20,15 +20,15 @@ public class Hack_Panel : MonoBehaviour
         Rand();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         if (c <= 3 && !stop)
         {
-            if (Input.GetKey(KeyCode.A)) { left.Rotate(Vector3.back * .5f); }
-            else if (Input.GetKey(KeyCode.D)) { left.Rotate(Vector3.forward * .5f); }
+            if (Input.GetKey(KeyCode.A)) { left.Rotate(Vector3.back * 1.5f); }
+            else if (Input.GetKey(KeyCode.D)) { left.Rotate(Vector3.forward * 1.5f); }
 
-            if (Input.GetKey(KeyCode.LeftArrow)) { right.Rotate(Vector3.back * .5f); }
-            else if (Input.GetKey(KeyCode.RightArrow)) { right.Rotate(Vector3.forward * .5f); }
+            if (Input.GetKey(KeyCode.LeftArrow)) { right.Rotate(Vector3.back * 1.5f); }
+            else if (Input.GetKey(KeyCode.RightArrow)) { right.Rotate(Vector3.forward * 1.5f); }
 
             lRot = (int)left.localEulerAngles.z;
             rRot = (int)right.localEulerAngles.z;

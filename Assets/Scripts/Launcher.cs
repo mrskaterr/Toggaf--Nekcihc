@@ -97,7 +97,7 @@ public class Launcher : MonoBehaviourPunCallbacks
 
     private void Update()
     {
-        if(PhotonNetwork.IsMasterClient && CheckTeams() && ArePlayersReady())
+        if(PhotonNetwork.IsMasterClient && CheckTeams() && ArePlayersReady() && PhotonNetwork.CurrentRoom.PlayerCount == 3)
         {
             startGameButton.SetActive(true);
         }

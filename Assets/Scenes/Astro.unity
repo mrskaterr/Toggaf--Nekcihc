@@ -136,6 +136,7 @@ GameObject:
   - component: {fileID: 207092064}
   - component: {fileID: 207092063}
   - component: {fileID: 207092067}
+  - component: {fileID: 207092068}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -233,6 +234,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bd62ab2611f99204bb9870fb03f9b0ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &207092068
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 207092062}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 860e10f8bc6aeab4ab571bc345a6b9d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &552812456
@@ -598,7 +611,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Restart
+  m_text: Quit
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -757,10 +770,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 207092067}
-        m_TargetAssemblyTypeName: EndScreen, Assembly-CSharp
-        m_MethodName: LoadScene
-        m_Mode: 3
+      - m_Target: {fileID: 207092068}
+        m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
+        m_MethodName: Restart
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -1063,7 +1076,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2030992634}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 207092068}
+        m_TargetAssemblyTypeName: UIButtons, Assembly-CSharp
+        m_MethodName: QuitGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2030992634
 MonoBehaviour:
   m_ObjectHideFlags: 0

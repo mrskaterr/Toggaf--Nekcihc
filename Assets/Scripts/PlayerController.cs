@@ -143,7 +143,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
     {
         Vector3 moveDir = new Vector3(Input.GetAxisRaw("Horizontal"), 0, Input.GetAxisRaw("Vertical")).normalized;
 
-        moveAmount = Vector3.SmoothDamp(moveAmount, moveDir * (Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed), ref smoothMoveVelocity, smoothTime);//TODO: cala sekcja do zmiany ( inputy )
+        if(roleIndex != 1) { moveAmount = Vector3.SmoothDamp(moveAmount, moveDir * (Input.GetKey(KeyCode.LeftControl) ? sprintSpeed : walkSpeed), ref smoothMoveVelocity, smoothTime); }
+        else
+        {
+            moveAmount = Vector3.SmoothDamp(moveAmount, moveDir * (Input.GetKey(KeyCode.LeftShift) ? sprintSpeed : walkSpeed), ref smoothMoveVelocity, smoothTime); 
+        }//TODO: cala sekcja do zmiany ( inputy )
     }
 
     void Jump()
@@ -294,5 +298,11 @@ public class PlayerController : MonoBehaviourPunCallbacks, ICatchable
             walkSpeed = _walkSpeed / _div;
             jumpForce = 0;
         }
+    }
+
+    public void JumpBoostSet(bool _p, float _multiplier = 2)
+    {
+        if (_p) { jumpForce = _jumpForce * _multiplier; }
+        else { jumpForce = _jumpForce; }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Photon.Pun;
+using UnityEngine.SceneManagement;
 
 public class Tasks : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class Tasks : MonoBehaviour
         completionInfo.text = HowManyActive() + " / " + maxTasks;
         if (HowManyActive() == 0)
         {
-            //wygrana glucixow
+            SceneManager.LoadScene(3);
         }
     }
 

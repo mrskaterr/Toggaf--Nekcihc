@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Astro.unity
     guid: 1d1c319569a8c9f42adf861b55c47eb6
+  - enabled: 1
+    path: Assets/Scenes/Blob.unity
+    guid: 5fee8a5acb2608b41923459d5f775761
   m_configObjects: {}

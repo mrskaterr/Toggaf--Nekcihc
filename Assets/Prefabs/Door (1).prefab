@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8365350007214320050}
   - component: {fileID: 8365350007214320051}
   - component: {fileID: 8365350007214320048}
+  - component: {fileID: 6756570348045566354}
   m_Layer: 0
   m_Name: Door (1)
   m_TagString: Untagged
@@ -67,9 +68,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: eb8bc880ed7c9ca43bbb18d42568a7d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  acceptableLayers:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!65 &8365350007214320048
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -83,6 +81,28 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2, y: 2, z: 3}
   m_Center: {x: 0, y: 1, z: 0}
+--- !u!114 &6756570348045566354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8365350007214320049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aa584fbee541324448dd18d8409c7a41, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ObservedComponentsFoldoutOpen: 1
+  Group: 0
+  prefixField: -1
+  Synchronization: 3
+  OwnershipTransfer: 0
+  observableSearch: 2
+  ObservedComponents: []
+  sceneViewId: 0
+  InstantiationId: 0
+  isRuntimeInstantiated: 0
 --- !u!1 &8365350007340919667
 GameObject:
   m_ObjectHideFlags: 0
@@ -143,7 +163,7 @@ MeshRenderer:
   m_RendererPriority: 0
   m_Materials:
   - {fileID: 8290782892783832528, guid: 8ba89bd891cb5444f9ecadcb8e885524, type: 3}
-  - {fileID: 2100000, guid: 8d1663ef1e8d53848aebff601ddcf4e3, type: 2}
+  - {fileID: 2100000, guid: 1ad964379d5fe71408a14d10011f4968, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -227,7 +247,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 8290782892783832528, guid: 8ba89bd891cb5444f9ecadcb8e885524, type: 3}
   - {fileID: 507964552181651666, guid: 8ba89bd891cb5444f9ecadcb8e885524, type: 3}
-  - {fileID: 2100000, guid: 8d1663ef1e8d53848aebff601ddcf4e3, type: 2}
+  - {fileID: 2100000, guid: 1ad964379d5fe71408a14d10011f4968, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -324,7 +344,7 @@ MeshRenderer:
   m_Materials:
   - {fileID: 8290782892783832528, guid: 8ba89bd891cb5444f9ecadcb8e885524, type: 3}
   - {fileID: 507964552181651666, guid: 8ba89bd891cb5444f9ecadcb8e885524, type: 3}
-  - {fileID: 2100000, guid: 8d1663ef1e8d53848aebff601ddcf4e3, type: 2}
+  - {fileID: 2100000, guid: 1ad964379d5fe71408a14d10011f4968, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

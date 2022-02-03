@@ -28,10 +28,18 @@ public class Morfing : MonoBehaviour
     PhotonView PV;
     PlayerController playerController;
 
+    Vector3 startPosA, startPosB;
+
     private void Awake()
     {
         PV = GetComponent<PhotonView>();
         playerController = GetComponent<PlayerController>();
+    }
+
+    private void Start()
+    {
+        startPosA = eye.transform.localPosition;
+        startPosB = eye2.transform.localPosition;
     }
 
     void Update()
@@ -143,6 +151,12 @@ public class Morfing : MonoBehaviour
         Player.SetActive(false);
         eye.enabled = false;
         eye2.enabled = false;
+        #region Just in case
+        eye.transform.localPosition = startPosA;
+        eye.transform.localEulerAngles = Vector3.zero;
+        eye2.transform.localPosition = startPosB;
+        eye2.transform.localEulerAngles = Vector3.zero;
+        #endregion
         DisAll();
         propList[index].SetActive(true);
         Destroy(PhotonNetwork.Instantiate(Path.Combine("PhotonPrefabs", particlesName), transform.position + Vector3.up * .5f, transform.rotation), 10f);
